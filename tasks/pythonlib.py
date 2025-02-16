@@ -203,6 +203,7 @@ pefile
 ordlookup/
 
 steamapi
+sqlite3/
 """
 
 
