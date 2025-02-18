@@ -202,7 +202,6 @@ pyobjus/
 pefile
 ordlookup/
 
-steamapi
 sqlite3/
 """
 
