@@ -3,10 +3,10 @@
 set -e
 
 # Base dependencies
-apt update
+apt-get update
 
 # install git and sudo
-apt install -y git sudo
+apt-get install -y git sudo
 
 # Now begin workflow
 git clone https://github.com/multimokia/renpy-build
