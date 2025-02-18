@@ -3,7 +3,7 @@
 set -e
 
 # Clear outdir
-rm -rf /outdir
+rm -rf /outdir/*
 
 # Base dependencies
 apt-get update
