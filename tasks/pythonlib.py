@@ -203,6 +203,7 @@ pefile
 ordlookup/
 
 sqlite3/
+_sqlite3
 """
 
 
