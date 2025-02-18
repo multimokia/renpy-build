@@ -1,5 +1,0 @@
-﻿services:
-  renpy-build:
-    image: ubuntu:24.04
-    volumes:
-      - "./:/renpy-build"
