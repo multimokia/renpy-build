@@ -29,4 +29,4 @@ chmod +x ./prepare.sh
 # Build
 python build.py
 
-cp -r ./* /outdir
+cp -r ./renpy/* /outdir

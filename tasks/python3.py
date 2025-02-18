@@ -123,6 +123,7 @@ def build_posix(c: Context):
         {{configure}} {{ cross_config }}
         --prefix="{{ install }}"
         --enable-ipv6
+        --enable-loadable-sqlite-extensions
         --with-build-python={{host}}/bin/python3
         --with-ensurepip=no
         """)
@@ -165,6 +166,7 @@ def build_android(c: Context):
         {{configure}} {{ cross_config }}
         --prefix="{{ install }}"
         --enable-ipv6
+        --enable-loadable-sqlite-extensions
         --with-build-python={{host}}/bin/python3
         --with-ensurepip=no
         """)
@@ -192,6 +194,7 @@ def build_windows(c: Context):
           {{configure}} {{ cross_config }}
           --enable-shared
           --prefix="{{ install }}"
+          --enable-loadable-sqlite-extensions
           --with-build-python={{host}}/bin/python3
           --with-ensurepip=no
     """)
@@ -213,6 +216,7 @@ def build_web(c: Context):
     c.run("""
         {{configure}} {{ cross_config }}
         --prefix="{{ install }}"
+        --enable-loadable-sqlite-extensions
         --with-emscripten-target=browser
         --with-build-python={{host}}/bin/python3
         """)

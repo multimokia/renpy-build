@@ -49,6 +49,9 @@ sudo apt-get install -y quilt
 # Needed for meson and cmake
 sudo apt-get install -y ninja-build
 
+# Needed for sqlite3
+sudo apt-get install -y libsqlite3-dev
+
 # Install the standard set of packages needed to build Ren'Py.
 sudo apt-get install -y \
     libavcodec-dev libavformat-dev \
