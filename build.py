@@ -29,22 +29,23 @@ class Platform:
 
 
 # Python 3
-
 Platform("linux", "x86_64", "3")
 Platform("linux", "aarch64", "3")
 
 Platform("windows", "x86_64", "3")
 
-Platform("mac", "x86_64", "3")
-Platform("mac", "arm64", "3")
+# Since we have no Mac -- and thus no access to XCode, we cannot allow these as build targets
+# Platform("mac", "x86_64", "3")
+# Platform("mac", "arm64", "3")
 
 Platform("android", "x86_64", "3")
 Platform("android", "arm64_v8a", "3")
 Platform("android", "armeabi_v7a", "3")
 
-Platform("ios", "arm64", "3")
-Platform("ios", "sim-x86_64", "3")
-Platform("ios", "sim-arm64", "3")
+# Same as before, not a valid build target without XCode
+# Platform("ios", "arm64", "3")
+# Platform("ios", "sim-x86_64", "3")
+# Platform("ios", "sim-arm64", "3")
 
 Platform("web", "wasm", "3")
 

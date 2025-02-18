@@ -10,6 +10,12 @@ BASE="$ROOT"
 # Needed to build things.
 sudo apt-get install -y git build-essential ccache unzip autoconf autoconf-archive automake libtool-bin
 
+# Fixes crashes in this script
+sudo apt-get install libassimp-dev
+
+# Fix some mac compilation issues
+sudo apt-get install clang-15
+
 # Needed to build python things.
 sudo apt-get install -y python3-dev python3-venv
 
