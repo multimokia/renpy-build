@@ -266,8 +266,8 @@ def python3(c: Context):
     with open(c.path("{{ distlib }}/{{ pythonver }}/sitecustomize.py"), "a") as f:
         f.write("\n")
         f.write("import site\n")
-        if socket.gethostname() == "eileen":
-            f.write("site.renpy_build_official = True\n")
+        # if socket.gethostname() == "eileen":
+        f.write("site.renpy_build_official = True\n")
 
     c.compile("{{ distlib }}/{{ pythonver }}/sitecustomize.py")
     c.unlink("{{ distlib }}/{{ pythonver }}/sitecustomize.py")

@@ -146,6 +146,7 @@ def build_ios(c: Context):
         {{configure}} {{ cross_config }}
         --prefix="{{ install }}"
         --disable-toolbox-glue
+        --enable-loadable-sqlite-extensions
         --enable-ipv6
         --with-build-python={{host}}/bin/python3
         --with-ensurepip=no

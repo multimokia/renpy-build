@@ -50,7 +50,8 @@ sudo apt-get install -y quilt
 sudo apt-get install -y ninja-build
 
 # Needed for sqlite3
-sudo apt-get install -y libsqlite3-dev
+sudo apt-get install -y zlib1g-dev libffi-dev libsqlite3-dev libncurses5-dev libncursesw5-dev libreadline6-dev \
+    libdb5.3-dev libgdbm-dev libexpat1-dev tk-dev
 
 # Install the standard set of packages needed to build Ren'Py.
 sudo apt-get install -y \
