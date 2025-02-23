@@ -86,6 +86,7 @@ def link_linux(c: Context):
     -lutil
     -lz
     -lpthread
+    -lsqlite3
     -lm
     """)
 
@@ -168,6 +169,7 @@ def link_android(c: Context):
     -lbz2
     -lz
     -lm
+    -lsqlite3
 
     -llog
     -landroid
@@ -226,6 +228,7 @@ def link_mac(c: Context):
     -lbz2
     -lz
     -lm
+    -lsqlite3
 
     -liconv
     -Wl,-framework,CoreAudio
@@ -396,6 +399,7 @@ def link_windows(c: Context):
     -lsetupapi
     -lversion
     -luuid
+    -lsqlite3
 
     -Wl,--export-all-symbols
     """)
