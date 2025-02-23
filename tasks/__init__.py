@@ -68,3 +68,4 @@ from . import renios
 
 from . import nvdrs
 from . import sevenzip
+from . import sqlite3

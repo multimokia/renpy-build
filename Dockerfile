@@ -4,6 +4,7 @@ LABEL authors="multimokia"
 COPY ./build.sh .
 COPY ./tars/android-ndk-r27c-linux.zip .
 COPY ./tars/CubismSdkForNative-4-r.6.2.zip .
+COPY ./tars/sqlite-amalgamation-3490100.zip .
 
 VOLUME "/outdir"
 
